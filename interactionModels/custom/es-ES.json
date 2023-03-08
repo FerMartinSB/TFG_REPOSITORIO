@@ -1,0 +1,303 @@
+{
+  "interactionModel": {
+    "languageModel": {
+      "invocationName": "asistente de salud",
+      "intents": [
+        {
+          "name": "AMAZON.CancelIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.HelpIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.StopIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.NavigateHomeIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.FallbackIntent",
+          "samples": []
+        },
+        {
+          "name": "Sintomologia_Cansancio_Apatia_Uno",
+          "slots": [],
+          "samples": [
+            "no tengo ganas de hacer nada",
+            "hoy no tengo ganas de nada "
+          ]
+        },
+        {
+          "name": "Get_Nombre",
+          "slots": [
+            {
+              "name": "nombre",
+              "type": "AMAZON.FirstName",
+              "samples": [
+                "Soy {nombre}",
+                "Me llamo {nombre}",
+                "Mi nombre es {nombre}",
+                "{nombre}"
+              ]
+            }
+          ],
+          "samples": [
+            "Soy {nombre}",
+            "Me llamo {nombre}",
+            "{nombre}",
+            "Mi nombre es {nombre}"
+          ]
+        },
+        {
+          "name": "AMAZON.YesIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.NoIntent",
+          "samples": []
+        },
+        {
+          "name": "Sintomologia_Cansancio_Apatia_Dos",
+          "slots": [],
+          "samples": [
+            "Estoy muy cansado"
+          ]
+        },
+        {
+          "name": "Sintomologia_Cansancio_Apatia_Tres",
+          "slots": [],
+          "samples": [
+            "me cuesta caminar",
+            "me canso si camino",
+            "no tengo fuerzas para caminar",
+            "no puedo caminar",
+            "no puedo salir a la calle",
+            "no tengo fuerzas para salir a la calle"
+          ]
+        },
+        {
+          "name": "Sintomologia_Cansancio_Apatia_Cuatro",
+          "slots": [],
+          "samples": [
+            "no se que hacer hoy me encuentro mal"
+          ]
+        },
+        {
+          "name": "Sintomologia_Cansancio_Apatia_Cinco",
+          "slots": [],
+          "samples": [
+            "me cuesta levantarme de la cama",
+            "me cuesta levantarme del sofa",
+            "no tengo fuerzas para moverme",
+            "no puedo moverme",
+            "no tengo fuerzas para hacer nada"
+          ]
+        },
+        {
+          "name": "Tratamiento_Uno",
+          "slots": [],
+          "samples": [
+            "Necesito algo que me ayude a relajarme"
+          ]
+        },
+        {
+          "name": "Tratamiento_Uno_Mindfulness",
+          "slots": [],
+          "samples": [
+            "mindfulness",
+            "sesion de mindfulness"
+          ]
+        },
+        {
+          "name": "Tratamiento_Uno_Relajacion",
+          "slots": [],
+          "samples": [
+            "relajación",
+            "sesion de relajacion"
+          ]
+        },
+        {
+          "name": "Tratamiento_Uno_Musica",
+          "slots": [],
+          "samples": [
+            "música",
+            "lista de musica",
+            "musica",
+            "reproduccion de la lista de musica"
+          ]
+        },
+        {
+          "name": "Tratamiento_Dos",
+          "slots": [],
+          "samples": [
+            "se me ha acabado la medicacion y no puedo ir a comprarla"
+          ]
+        },
+        {
+          "name": "Tratamiento_Dos_LlamadaTelefonica",
+          "slots": [
+            {
+              "name": "contacto",
+              "type": "AMAZON.FirstName"
+            }
+          ],
+          "samples": [
+            "Con {contacto}",
+            "A {contacto}",
+            "Llama a {contacto}"
+          ]
+        },
+        {
+          "name": "Tratamiento_Tres",
+          "slots": [],
+          "samples": [
+            "no se si me he tomado hoy la medicacion"
+          ]
+        },
+        {
+          "name": "Tratamiento_Cuatro",
+          "slots": [],
+          "samples": [
+            "recordatorio de medicacion"
+          ]
+        },
+        {
+          "name": "Tratamiento_Cuatro_FijarDia",
+          "slots": [
+            {
+              "name": "dia_recordatorio",
+              "type": "AMAZON.DATE"
+            }
+          ],
+          "samples": [
+            "{dia_recordatorio}"
+          ]
+        },
+        {
+          "name": "Tratamiento_Cuatro_FijarHora",
+          "slots": [
+            {
+              "name": "hora_recordatorio",
+              "type": "AMAZON.TIME"
+            }
+          ],
+          "samples": [
+            "{hora_recordatorio}"
+          ]
+        },
+        {
+          "name": "Localidad_Museo_Sint_Uno",
+          "slots": [
+            {
+              "name": "Localidad",
+              "type": "AMAZON.City"
+            }
+          ],
+          "samples": [
+            "{Localidad}"
+          ]
+        },
+        {
+          "name": "Tratamiento_Cinco",
+          "slots": [],
+          "samples": [
+            "Me ha sentado mal el tratamiento"
+          ]
+        },
+        {
+          "name": "Tratamiento_Cinco_MejorEstado",
+          "slots": [],
+          "samples": [
+            "Mejor",
+            "Bien"
+          ]
+        },
+        {
+          "name": "Tratamiento_Cinco_PeorEstado",
+          "slots": [],
+          "samples": [
+            "Peor",
+            "Mal"
+          ]
+        },
+        {
+          "name": "Sintomologia_Cansancio_Apatia_Uno_Ocio",
+          "slots": [],
+          "samples": [
+            "Ocio"
+          ]
+        },
+        {
+          "name": "Sintomologia_Cansancio_Apatia_Uno_Trabajo",
+          "slots": [],
+          "samples": [
+            "Trabajo"
+          ]
+        },
+        {
+          "name": "Tratamiento_Dos_Recordatorio",
+          "slots": [
+            {
+              "name": "fecha_tratamiento_dos",
+              "type": "AMAZON.DATE"
+            },
+            {
+              "name": "hora_tratamiento_dos",
+              "type": "AMAZON.TIME"
+            }
+          ],
+          "samples": [
+            "El {fecha_tratamiento_dos} a las {hora_tratamiento_dos}",
+            "En {hora_tratamiento_dos}",
+            "A las {hora_tratamiento_dos}"
+          ]
+        }
+      ],
+      "types": []
+    },
+    "dialog": {
+      "intents": [
+        {
+          "name": "Sintomologia_Cansancio_Apatia_Uno",
+          "confirmationRequired": false,
+          "prompts": {},
+          "slots": []
+        },
+        {
+          "name": "Get_Nombre",
+          "confirmationRequired": false,
+          "prompts": {},
+          "slots": [
+            {
+              "name": "nombre",
+              "type": "AMAZON.FirstName",
+              "elicitationRequired": true,
+              "confirmationRequired": false,
+              "prompts": {
+                "elicitation": "Elicit.Slot.1620869853624.74795375020"
+              }
+            }
+          ],
+          "delegationStrategy": "ALWAYS"
+        }
+      ],
+      "delegationStrategy": "ALWAYS"
+    },
+    "prompts": [
+      {
+        "id": "Elicit.Slot.1620869853624.74795375020",
+        "variations": [
+          {
+            "type": "PlainText",
+            "value": "Necesito que me digas tu nombre porfavor "
+          }
+        ]
+      }
+    ]
+  },
+  "version": "38"
+}

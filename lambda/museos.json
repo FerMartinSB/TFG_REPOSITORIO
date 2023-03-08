@@ -1,0 +1,33 @@
+{
+    "ciudad": [
+        {
+            "nombre": "madrid",
+            "museos": [
+                "Museo del Prado",
+                "Museo Reina Sofia",
+                "Museo Thyssen-Bornemisza",
+                "Museo Arqueológico Nacional"
+                ]
+        },
+        {
+            "nombre": "barcelona",
+            "museos": [
+                "El Museu Nacional d’Art de Catalunya",
+                "Museu Picasso",
+                "Fundación Joan Miró",
+                "El Museu d’Art Contemporani de Barcelona"
+                ]
+        },
+        {
+            "nombre": "valencia",
+            "museos": [
+                "Museo de las Ciencias Príncipe Felipe",
+                "Museo de la Lonja",
+                "Museu Valencià de la Il-lustració i la Modernitat",
+                "Museo de Bellas Artes San Pío V"
+                ]
+        }
+        
+        
+        ]
+}
