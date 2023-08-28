@@ -1,7 +1,34 @@
 {
   "interactionModel": {
+    "dialog": {
+      "intents": [
+        {
+          "slots": [],
+          "name": "Sintomologia_Cansancio_Apatia_Uno",
+          "confirmationRequired": false,
+          "prompts": {}
+        },
+        {
+          "slots": [
+            {
+              "name": "nombre",
+              "elicitationRequired": true,
+              "type": "AMAZON.FirstName",
+              "confirmationRequired": false,
+              "prompts": {
+                "elicitation": "Elicit.Slot.1620869853624.74795375020"
+              }
+            }
+          ],
+          "name": "Get_Nombre",
+          "delegationStrategy": "ALWAYS",
+          "confirmationRequired": false,
+          "prompts": {}
+        }
+      ],
+      "delegationStrategy": "ALWAYS"
+    },
     "languageModel": {
-      "invocationName": "asistente de salud",
       "intents": [
         {
           "name": "AMAZON.CancelIntent",
@@ -24,15 +51,14 @@
           "samples": []
         },
         {
-          "name": "Sintomologia_Cansancio_Apatia_Uno",
           "slots": [],
+          "name": "Sintomologia_Cansancio_Apatia_Uno",
           "samples": [
             "no tengo ganas de hacer nada",
             "hoy no tengo ganas de nada "
           ]
         },
         {
-          "name": "Get_Nombre",
           "slots": [
             {
               "name": "nombre",
@@ -45,6 +71,7 @@
               ]
             }
           ],
+          "name": "Get_Nombre",
           "samples": [
             "Soy {nombre}",
             "Me llamo {nombre}",
@@ -61,15 +88,15 @@
           "samples": []
         },
         {
-          "name": "Sintomologia_Cansancio_Apatia_Dos",
           "slots": [],
+          "name": "Sintomologia_Cansancio_Apatia_Dos",
           "samples": [
             "Estoy muy cansado"
           ]
         },
         {
-          "name": "Sintomologia_Cansancio_Apatia_Tres",
           "slots": [],
+          "name": "Sintomologia_Cansancio_Apatia_Tres",
           "samples": [
             "me cuesta caminar",
             "me canso si camino",
@@ -80,15 +107,15 @@
           ]
         },
         {
-          "name": "Sintomologia_Cansancio_Apatia_Cuatro",
           "slots": [],
+          "name": "Sintomologia_Cansancio_Apatia_Cuatro",
           "samples": [
             "no se que hacer hoy me encuentro mal"
           ]
         },
         {
-          "name": "Sintomologia_Cansancio_Apatia_Cinco",
           "slots": [],
+          "name": "Sintomologia_Cansancio_Apatia_Cinco",
           "samples": [
             "me cuesta levantarme de la cama",
             "me cuesta levantarme del sofa",
@@ -98,31 +125,31 @@
           ]
         },
         {
-          "name": "Tratamiento_Uno",
           "slots": [],
+          "name": "Tratamiento_Uno",
           "samples": [
             "Necesito algo que me ayude a relajarme"
           ]
         },
         {
-          "name": "Tratamiento_Uno_Mindfulness",
           "slots": [],
+          "name": "Tratamiento_Uno_Mindfulness",
           "samples": [
             "mindfulness",
             "sesion de mindfulness"
           ]
         },
         {
-          "name": "Tratamiento_Uno_Relajacion",
           "slots": [],
+          "name": "Tratamiento_Uno_Relajacion",
           "samples": [
             "relajación",
             "sesion de relajacion"
           ]
         },
         {
-          "name": "Tratamiento_Uno_Musica",
           "slots": [],
+          "name": "Tratamiento_Uno_Musica",
           "samples": [
             "música",
             "lista de musica",
@@ -131,20 +158,20 @@
           ]
         },
         {
-          "name": "Tratamiento_Dos",
           "slots": [],
+          "name": "Tratamiento_Dos",
           "samples": [
             "se me ha acabado la medicacion y no puedo ir a comprarla"
           ]
         },
         {
-          "name": "Tratamiento_Dos_LlamadaTelefonica",
           "slots": [
             {
               "name": "contacto",
               "type": "AMAZON.FirstName"
             }
           ],
+          "name": "Tratamiento_Dos_LlamadaTelefonica",
           "samples": [
             "Con {contacto}",
             "A {contacto}",
@@ -152,94 +179,93 @@
           ]
         },
         {
-          "name": "Tratamiento_Tres",
           "slots": [],
+          "name": "Tratamiento_Tres",
           "samples": [
             "no se si me he tomado hoy la medicacion"
           ]
         },
         {
-          "name": "Tratamiento_Cuatro",
           "slots": [],
+          "name": "Tratamiento_Cuatro",
           "samples": [
             "recordatorio de medicacion"
           ]
         },
         {
-          "name": "Tratamiento_Cuatro_FijarDia",
           "slots": [
             {
               "name": "dia_recordatorio",
               "type": "AMAZON.DATE"
             }
           ],
+          "name": "Tratamiento_Cuatro_FijarDia",
           "samples": [
             "{dia_recordatorio}"
           ]
         },
         {
-          "name": "Tratamiento_Cuatro_FijarHora",
           "slots": [
             {
               "name": "hora_recordatorio",
               "type": "AMAZON.TIME"
             }
           ],
+          "name": "Tratamiento_Cuatro_FijarHora",
           "samples": [
             "{hora_recordatorio}"
           ]
         },
         {
-          "name": "Localidad_Museo_Sint_Uno",
           "slots": [
             {
               "name": "Localidad",
               "type": "AMAZON.City"
             }
           ],
+          "name": "Localidad_Museo_Sint_Uno",
           "samples": [
             "{Localidad}"
           ]
         },
         {
-          "name": "Tratamiento_Cinco",
           "slots": [],
+          "name": "Tratamiento_Cinco",
           "samples": [
             "Me ha sentado mal el tratamiento"
           ]
         },
         {
-          "name": "Tratamiento_Cinco_MejorEstado",
           "slots": [],
+          "name": "Tratamiento_Cinco_MejorEstado",
           "samples": [
             "Mejor",
             "Bien"
           ]
         },
         {
-          "name": "Tratamiento_Cinco_PeorEstado",
           "slots": [],
+          "name": "Tratamiento_Cinco_PeorEstado",
           "samples": [
             "Peor",
             "Mal"
           ]
         },
         {
-          "name": "Sintomologia_Cansancio_Apatia_Uno_Ocio",
           "slots": [],
+          "name": "Sintomologia_Cansancio_Apatia_Uno_Ocio",
           "samples": [
             "Ocio"
           ]
         },
         {
-          "name": "Sintomologia_Cansancio_Apatia_Uno_Trabajo",
           "slots": [],
+          "name": "Sintomologia_Cansancio_Apatia_Uno_Trabajo",
           "samples": [
             "Trabajo"
           ]
         },
         {
-          "name": "Tratamiento_Dos_Recordatorio",
           "slots": [
             {
               "name": "fecha_tratamiento_dos",
@@ -250,6 +276,7 @@
               "type": "AMAZON.TIME"
             }
           ],
+          "name": "Tratamiento_Dos_Recordatorio",
           "samples": [
             "El {fecha_tratamiento_dos} a las {hora_tratamiento_dos}",
             "En {hora_tratamiento_dos}",
@@ -257,47 +284,19 @@
           ]
         }
       ],
-      "types": []
-    },
-    "dialog": {
-      "intents": [
-        {
-          "name": "Sintomologia_Cansancio_Apatia_Uno",
-          "confirmationRequired": false,
-          "prompts": {},
-          "slots": []
-        },
-        {
-          "name": "Get_Nombre",
-          "confirmationRequired": false,
-          "prompts": {},
-          "slots": [
-            {
-              "name": "nombre",
-              "type": "AMAZON.FirstName",
-              "elicitationRequired": true,
-              "confirmationRequired": false,
-              "prompts": {
-                "elicitation": "Elicit.Slot.1620869853624.74795375020"
-              }
-            }
-          ],
-          "delegationStrategy": "ALWAYS"
-        }
-      ],
-      "delegationStrategy": "ALWAYS"
+      "types": [],
+      "invocationName": "asistente de salud"
     },
     "prompts": [
       {
-        "id": "Elicit.Slot.1620869853624.74795375020",
         "variations": [
           {
             "type": "PlainText",
             "value": "Necesito que me digas tu nombre porfavor "
           }
-        ]
+        ],
+        "id": "Elicit.Slot.1620869853624.74795375020"
       }
     ]
-  },
-  "version": "38"
+  }
 }
